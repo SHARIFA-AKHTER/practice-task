@@ -52,9 +52,9 @@
 // console.log(largest);
 
 //reduce
-// const nums = [1,2,3,4,5]
-// const sum = nums.reduce((total, n) => total+n,0)
-// console.log(sum)
+const nums = [1,2,3,4,5,6,7]
+const sum = nums.reduce((total, n) => total+n,0)
+console.log(sum)
 
 // Check for Palindrome
 // function isPalindrome(str) {
@@ -68,11 +68,11 @@
 // const evens = data.filter(num => num % 2 === 0);
 // const odds = data.filter(num => num % 2 !== 0);
 
-function countVowels(str) {
-    const vowels = "aeiouAEIOU";
-    let count = 0;
-    for (let char of str) {
-        if (vowels.includes(char)) count++;
-    }
-    return count;
-}
+// function countVowels(str) {
+//     const vowels = "aeiouAEIOU";
+//     let count = 0;
+//     for (let char of str) {
+//         if (vowels.includes(char)) count++;
+//     }
+//     return count;
+// }
