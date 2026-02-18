@@ -76,3 +76,9 @@ console.log(sum)
 //     }
 //     return count;
 // }
+
+// string reverse
+function reverseString(str){
+    return str.split('').reverse().join('')
+}
+console.log(reverseString("Sharifa"))
