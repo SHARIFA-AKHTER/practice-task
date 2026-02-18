@@ -78,7 +78,15 @@ console.log(sum)
 // }
 
 // string reverse
-function reverseString(str){
-    return str.split('').reverse().join('')
+// function reverseString(str){
+//     return str.split('').reverse().join('')
+// }
+// console.log(reverseString("Sharifa"))
+
+// string palindrome
+function isPalindrome(str){
+    const reversed = str.split('').reverse().join('');
+    return reversed
 }
-console.log(reverseString("Sharifa"))
+
+console.log(isPalindrome("madam"))
