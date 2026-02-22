@@ -91,10 +91,23 @@
 
 // console.log(isPalindrome("madam"))
 //array of elements
-let numbers = [5, 12, 8, 3, 9, 20];
-let sum = 0;
+// let numbers = [5, 12, 8, 3, 9, 20];
+// let sum = 0;
 
-for (let num of numbers) {
-    sum += num;
+// for (let num of numbers) {
+//     sum += num;
+// }
+// console.log("Total sum:", sum);
+function countVoweles(str){
+    let count = 0;
+    str = str.toLowerCase()
+    for (let cher of str){
+        if('aeiou'.includes(cher)){
+            count++
+        }
+    }
+    return count;
 }
-console.log("Total sum:", sum);
+console.log(countVoweles("Hello World"));
+console.log(countVoweles("Bangladesh"));  
+console.log(countVoweles("rhythm"));
