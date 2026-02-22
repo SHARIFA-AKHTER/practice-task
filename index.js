@@ -52,9 +52,9 @@
 // console.log(largest);
 
 //reduce
-const nums = [1,2,3,4,5,6,7]
-const sum = nums.reduce((total, n) => total+n,0)
-console.log(sum)
+// const nums = [1,2,3,4,5,6,7]
+// const sum = nums.reduce((total, n) => total+n,0)
+// console.log(sum)
 
 // Check for Palindrome
 // function isPalindrome(str) {
@@ -84,9 +84,17 @@ console.log(sum)
 // console.log(reverseString("Sharifa"))
 
 // string palindrome
-function isPalindrome(str){
-    const reversed = str.split('').reverse().join('');
-    return reversed
-}
+// function isPalindrome(str){
+//     const reversed = str.split('').reverse().join('');
+//     return reversed
+// }
 
-console.log(isPalindrome("madam"))
+// console.log(isPalindrome("madam"))
+//array of elements
+let numbers = [5, 12, 8, 3, 9, 20];
+let sum = 0;
+
+for (let num of numbers) {
+    sum += num;
+}
+console.log("Total sum:", sum);
