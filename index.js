@@ -98,16 +98,29 @@
 //     sum += num;
 // }
 // console.log("Total sum:", sum);
-function countVoweles(str){
-    let count = 0;
-    str = str.toLowerCase()
-    for (let cher of str){
-        if('aeiou'.includes(cher)){
-            count++
-        }
+//string vowels
+// function countVoweles(str){
+//     let count = 0;
+//     str = str.toLowerCase()
+//     for (let cher of str){
+//         if('aeiou'.includes(cher)){
+//             count++
+//         }
+//     }
+//     return count;
+// }
+// console.log(countVoweles("Hello World"));
+// console.log(countVoweles("Bangladesh"));  
+// console.log(countVoweles("rhythm"));
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0) {
+        console.log("Buzz");
+    } else {
+        console.log(i);
     }
-    return count;
 }
-console.log(countVoweles("Hello World"));
-console.log(countVoweles("Bangladesh"));  
-console.log(countVoweles("rhythm"));
