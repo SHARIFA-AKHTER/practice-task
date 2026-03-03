@@ -125,10 +125,17 @@
 //     }
 // }
 // Palindrome
-function isPalindrome(word) {
-    const reversed = word.split('').reverse().join('');
-    return word === reversed;
-}
+// function isPalindrome(word) {
+//     const reversed = word.split('').reverse().join('');
+//     return word === reversed;
+// }
 
-console.log(isPalindrome("level")); // true
-console.log(isPalindrome("hello")); // false
+// console.log(isPalindrome("level")); // true
+// console.log(isPalindrome("hello")); // false
+// Math.max
+const arr = [10, 50, 20, 45, 80, 5];
+
+// Solution
+const maxNum = Math.max(...arr);
+
+console.log(maxNum);
