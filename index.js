@@ -133,9 +133,21 @@
 // console.log(isPalindrome("level")); // true
 // console.log(isPalindrome("hello")); // false
 // Math.max
-const arr = [10, 50, 20, 45, 80, 5];
+// const arr = [10, 50, 20, 45, 80, 5];
 
-// Solution
-const maxNum = Math.max(...arr);
+// // Solution
+// const maxNum = Math.max(...arr);
 
-console.log(maxNum);
+// console.log(maxNum);
+
+function reverseString(str) {
+  let reversed = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+
+  return reversed;
+}
+
+console.log(reverseString("hello"));
