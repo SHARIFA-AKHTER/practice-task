@@ -140,14 +140,26 @@
 
 // console.log(maxNum);
 
-function reverseString(str) {
-  let reversed = "";
+// function reverseString(str) {
+//   let reversed = "";
 
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversed += str[i];
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reversed += str[i];
+//   }
+
+//   return reversed;
+// }
+
+// console.log(reverseString("hello"));
+
+Array.prototype.myMap = function (callback) {
+  let result = [];
+
+  for (let i = 0; i < this.length; i++) {
+    result.push(callback(this[i], i, this));
   }
 
-  return reversed;
-}
+  return result;
+};
 
-console.log(reverseString("hello"));
+console.log([1,2,3].myMap(num => num * 2));
